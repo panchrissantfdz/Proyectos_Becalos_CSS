@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: SoDo Sans,
+        Helvetica,
+        Arial,
+        sans-serif;
+    background-color: white;
+}
+
+/* Estilos para la barra de navegación */
+
+.header {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    padding: 20px;
+}
+
+.topnavbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+.topnavbar .nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.topnavbar .nav .nav-item .item-image {
+    max-width: 50px;
+}
+
+.topnavbar .nav .nav-item a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.topnavbar .nav .nav-izq a:hover {
+    color: green;
+}
+
+.right-nav {
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.nav-item-2 {
+    border: 2px solid black;
+    font-weight: 500;
+    padding: 8px 4px;
+    border-radius: 25px;
+    width: 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-extra a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item-2:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-loc:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Tarjetas */
+
+#contenedor-tarjetas {
+    display: grid;
+    margin-top: 20px;
+
+
+}
+
+.tarjeta-wrapper {
+    margin-bottom: 20px;
+    background-color: white;
+
+}
+
+
+#tarjeta-dos {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+
+
+
+#tarjeta-dos {
+    background-color: #0044Ba;
+}
+
+
+
+#tarjeta-dos .contenedor-imagen{
+    order: 2;
+    width: 50%;
+}
+
+
+#tarjeta-dos .contenedor-imagen .imagen-starbucks{
+    max-width: 100%;
+    margin-right: auto;
+}
+
+
+
+.contenedor-imagen {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contenedor-texto {
+    color: white;
+    text-align: center;
+    width: 40%;
+    font-family: "Catamaran", sans-serif;
+    padding: 32px 16px;
+}
+
+
+.contenedor-interno {
+    display: inline-block;
+
+}
+
+
+.contenedor-texto h3 {
+    font-size: 2.5rem;
+    font-weight: 650;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Centrar el título */
+}
+
+.contenedor-texto span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contenedor-texto p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.texto {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,172 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
+    background-color: white;
+}
+
+/* Tarjetas */
+#contenedor-tarjetas {
+    display: grid;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.tarjeta-wrapper {
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+#tarjeta-uno,
+#tarjeta-dos,
+#tarjeta-tres,
+#tarjeta-cuatro,
+#tarjeta-cinco {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+#tarjeta-uno {
+    background-color: #1E3932;
+}
+
+#tarjeta-dos {
+    background-color: #0044Ba;
+}
+
+#tarjeta-tres {
+    background-color: #DC3545;
+}
+
+#tarjeta-cuatro {
+    background-color: #1E3932;
+}
+
+#tarjeta-cinco {
+    background-color: #DC3545;
+}
+
+#tarjeta-uno .contenedor-imagen,
+#tarjeta-tres .contenedor-imagen,
+#tarjeta-cinco .contenedor-imagen {
+    width: 50%;
+}
+
+#tarjeta-dos .contenedor-imagen,
+#tarjeta-cuatro .contenedor-imagen {
+    order: 2;
+    width: 50%;
+}
+
+#tarjeta-uno .contenedor-imagen .imagen-starbucks,
+#tarjeta-dos .contenedor-imagen .imagen-starbucks,
+#tarjeta-tres .contenedor-imagen .imagen-starbucks,
+#tarjeta-cuatro .contenedor-imagen .imagen-starbucks,
+#tarjeta-cinco .contenedor-imagen .imagen-starbucks {
+    max-width: 100%;
+    margin-right: auto;
+}
+
+.contenedor-imagen {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contenedor-texto {
+    color: white;
+    text-align: center;
+    width: 40%;
+    font-family: "Catamaran", sans-serif;
+    padding: 32px 16px;
+}
+
+.contenedor-interno {
+    display: inline-block;
+}
+
+.contenedor-texto h3 {
+    font-size: 2.5rem;
+    font-weight: 650;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Centrar el título */
+}
+
+.contenedor-texto span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contenedor-texto p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.texto {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.boton {
+    border: 2px solid white;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: white;
+    width: auto;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    /* Fondo transparente */
+    white-space: nowrap;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    #contenedor-tarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-wrapper {
+        width: 90%;
+    }
+
+    #tarjeta-uno,
+    #tarjeta-dos,
+    #tarjeta-tres,
+    #tarjeta-cuatro,
+    #tarjeta-cinco {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tarjeta-uno .contenedor-imagen,
+    #tarjeta-dos .contenedor-imagen,
+    #tarjeta-tres .contenedor-imagen,
+    #tarjeta-cuatro .contenedor-imagen,
+    #tarjeta-cinco .contenedor-imagen {
+        width: 100%;
+        order: 0;
+    }
+
+    .contenedor-texto {
+        width: 100%;
+        padding: 16px;
+    }
+}

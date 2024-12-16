@@ -1,0 +1,83 @@
+/* Tarjetas pequeñas */
+#tarjetas-pequenas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#tarjeta-pequena1,
+#tarjeta-pequena2 {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tarjeta-pequena1 {
+    background-color: #f6bfd9;
+    color: #f585ba;
+}
+
+#tarjeta-pequena2 {
+    background-color: #98cde4;
+    color: #57bce7;
+}
+
+.contenedor-imagen {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.imagen-starbucks {
+    max-width: 100%;
+    height: auto;
+}
+
+.cont-1 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#tarjeta-pequena1 .cont-1 {
+    color: #f84398;
+}
+
+#tarjeta-pequena2 .cont-1 {
+    color: #3392bb;
+}
+
+.boton {
+    border: 2px solid;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#tarjeta-pequena1 .boton {
+    border-color: #f84398;
+    color: #f84398;
+}
+
+#tarjeta-pequena2 .boton {
+    border-color: #3392bb;
+    color: #3392bb;
+}
+
+#tarjeta-pequena1 .boton:hover {
+    background-color: #f84398;
+    color: white;
+}
+
+#tarjeta-pequena2 .boton:hover {
+    background-color: #57bce7;
+    color: white;
+}
